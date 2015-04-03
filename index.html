@@ -11,8 +11,15 @@
 </head>
 <body>
   <h1>Content-Security-Policy Test</h1>
+  <p>Inheriting page:
   <a href="http://lockstep.github.io/csp_receiver">
     http://lockstep.github.io/csp_receiver
   </a>
+  </p>
+  <h3>Test script:</h3>
+<pre>
+var w = window.open('', 'test_win', 'location=no');
+w.location = "http://www.yahoo.com";
+</pre>
 </body>
 </html>
